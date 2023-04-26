@@ -10,9 +10,9 @@ function Movies() {
         <ul>
           {movies.map((items, index) => (
             <li key={index}>
-              Title: {items.title}
-              <br />
-              Time: {items.time}
+              <h2>Title: {items.title}</h2>
+
+             <h3> Time: {items.time}</h3>
               <ul>
                 {items.genres.map((items, index) => (
                   <li key={index}>{items}</li>

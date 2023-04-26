@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return(  
   <div>
-
-<NavLink to="/" exact>HOME</NavLink>
-<NavLink to="/movies" exact>Movies</NavLink>
-<NavLink to="/directors" exact>Directors</NavLink>
-<NavLink to="/actors" exact>Actors</NavLink>
-
+<ul>
+<li><NavLink to="/" exact style={{marginRight:"8px"}}>Home</NavLink></li>
+<li><NavLink to="/movies" exact style={{marginRight:"8px"}} >Movies</NavLink></li>
+<li><NavLink to="/directors" exact style={{marginRight:"8px"}} >Directors</NavLink></li>
+<li><NavLink to="/actors" exact>Actors</NavLink></li>
+</ul>
   </div>
   )
 }
